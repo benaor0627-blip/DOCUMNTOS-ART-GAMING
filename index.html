@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Gaming — Documentos Oficiales</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #1a0533 0%, #0d1f3c 50%, #0a2a1a 100%);
+      padding: 60px 20px 50px;
+      text-align: center;
+      border-bottom: 2px solid #7c3aed44;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, #7c3aed22 0%, transparent 70%);
+    }
+    header .logo {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg, #a855f7, #3b82f6, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      z-index: 1;
+    }
+    header .tagline {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #94a3b8;
+      position: relative;
+      z-index: 1;
+    }
+    header .badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 18px;
+      border: 1px solid #7c3aed66;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: #a78bfa;
+      background: #7c3aed11;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px 80px;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #7c3aed;
+      margin-bottom: 24px;
+    }
+
+    /* GRID */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .doc-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .doc-card:hover {
+      transform: translateY(-4px);
+      border-color: #7c3aed66;
+      box-shadow: 0 8px 32px #7c3aed22;
+    }
+
+    .doc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+    .icon-pdf  { background: #7f1d1d33; }
+    .icon-docx { background: #1e3a5f33; }
+
+    .doc-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f1f5f9;
+      line-height: 1.4;
+    }
+    .doc-type {
+      font-size: 0.75rem;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .doc-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.8; }
+    .btn-primary {
+      background: #7c3aed;
+      color: #fff;
+    }
+    .btn-secondary {
+      background: #1f2937;
+      color: #94a3b8;
+      border: 1px solid #374151;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #374151;
+      font-size: 0.8rem;
+      border-top: 1px solid #1f2937;
+    }
+    footer span { color: #7c3aed; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🎮 Art Gaming</div>
+  <div class="tagline">Centro de Documentación Oficial</div>
+  <div class="badge">✦ Acceso libre a todos los materiales</div>
+</header>
+
+<main>
+  <div class="section-title">📚 Manuales y Protocolos</div>
+
+  <div class="docs-grid">
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">📘</div>
+      <div class="doc-title">Manuales Art Gaming Completo v2</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Manuales_ArtGaming_Completo_v2.docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">🚑</div>
+      <div class="doc-title">Manual Primeros Auxilios Art Gaming</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Manual_Primeros_Auxilios_ArtGaming (1).docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">🧘</div>
+      <div class="doc-title">Manual RIP — Ritual de Intención Profunda</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Manual_RIP_Ritual_Intencion_Profunda.docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">💪</div>
+      <div class="doc-title">Protocolo Físico Art Gaming</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Protocolo_Fisico_ArtGaming (1).docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">👦</div>
+      <div class="doc-title">Protocolo para Menores Art Gaming</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Protocolo_Menores_ArtGaming (1).docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-docx">💬</div>
+      <div class="doc-title">Mensajes Parametrizados de WhatsApp</div>
+      <div class="doc-type">Word · DOCX</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Mensajes parametrizados de WhatsApp.docx" download>⬇ Descargar</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-pdf">📄</div>
+      <div class="doc-title">ADN Replicabilidad Art Gaming — Clase 7</div>
+      <div class="doc-type">PDF</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="ADN_Replicabilidad_Art_Gaming_Clase7.pdf" target="_blank">👁 Ver</a>
+        <a class="btn btn-secondary" href="ADN_Replicabilidad_Art_Gaming_Clase7.pdf" download>⬇</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-pdf">🗺️</div>
+      <div class="doc-title">Mapa Visual Art Gaming — Clase 6</div>
+      <div class="doc-type">PDF</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Mapa_Visual_Art_Gaming_Clase6.pdf" target="_blank">👁 Ver</a>
+        <a class="btn btn-secondary" href="Mapa_Visual_Art_Gaming_Clase6.pdf" download>⬇</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-pdf">🗒️</div>
+      <div class="doc-title">Class 7 ADN — 10/09/26</div>
+      <div class="doc-type">PDF</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Class_7_ADN 100926 (1).pdf" target="_blank">👁 Ver</a>
+        <a class="btn btn-secondary" href="Class_7_ADN 100926 (1).pdf" download>⬇</a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon icon-pdf">🗺️</div>
+      <div class="doc-title">Art Gaming Expansion Blueprint</div>
+      <div class="doc-type">PDF · 10 MB</div>
+      <div class="doc-actions">
+        <a class="btn btn-primary" href="Art_Gaming_Expansion_Blueprint.pdf" target="_blank">👁 Ver</a>
+        <a class="btn btn-secondary" href="Art_Gaming_Expansion_Blueprint.pdf" download>⬇</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 <span>Art Gaming</span> · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
